@@ -5,3 +5,56 @@
  */
 
 include_once 'commerce_ogmk_products.features.inc';
+
+/**
+ * Hooks.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function commerce_ogmk_products_menu() {
+  $items['user/%user/orders'] = array(
+    'title'            => 'My Orders',
+    'access callback'  => '_commerce_ogmk_products_user_orders_access',
+    'access arguments' => array(1),
+    'page callback'    => '_commerce_ogmk_products_user_orders_page',
+    'page arguments'   => array(1),
+    'type'             => MENU_LOCAL_TASK,
+    'weight'           => -10,
+    'file'             => 'commerce_ogmk_products.pages.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function commerce_ogmk_products_theme($existing, $type, $theme, $path) {
+  return array(
+    'user_orders_page' => array(
+      'variables' => array('variables' => NULL),
+      'template'  => 'templates/pages/user-orders',
+    ),
+  );
+}
+
+/**
+ * Functions for internal use.
+ */
+
+/**
+ * Access callback for the My Orders page.
+ *
+ * @param object $requestedUser
+ *   The user for whom to display the orders.
+ */
+function _commerce_ogmk_products_user_orders_access($requestedUser) {
+  global $user;
+  if ($user->uid === 1 || $user->uid == $requestedUser->uid) {
+    return TRUE;
+  }
+
+  return FALSE;
+}
