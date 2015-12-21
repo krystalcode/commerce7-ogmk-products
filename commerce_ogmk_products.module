@@ -59,6 +59,65 @@ function commerce_ogmk_products_entity_info_alter(&$entity_info) {
 }
 
 /**
+ * Public API.
+ */
+
+/**
+ * @param int|object $product
+ *   The product id or object for whom to check if there is a referencing node.
+ * @param string $node_type
+ *   The node type to look for.
+ *
+ * @return int
+ *   Zero (0) if there is no node referencing the product.
+ *   The node's id otherwise.
+ */
+function commerce_ogmk_products_product_has_node($product, $node_type = 'product') {
+  $productId = NULL;
+  if (is_int($product)) {
+    $productId = $product;
+  } else {
+    $productId = $product->product_id;
+  }
+
+  // Get the Shop owned by the user.
+  $query = new EntityFieldQuery();
+  $query
+    ->entityCondition('entity_type', 'node', '=')
+    ->propertyCondition('type', $node_type)
+    ->fieldCondition('field_products_ref', 'product_id', $productId, '=');
+  $result = $query->execute();
+
+  if (empty($result['node'])) {
+    return 0;
+  }
+
+  // Get the first key of the result array because there should be only one
+  // result.
+  return key($result['node']);
+}
+
+/**
+ * @param int|object $product
+ *   The product id or object for whom to check if there is a referencing node.
+ * @param string $node_type
+ *   The node type to look for.
+ *
+ * @return null|object
+ *   NULL if there is no node referencing the product.
+ *   The node's object otherwise.
+ */
+function commerce_ogmk_products_product_get_node($product, $node_type = 'product') {
+  $nodeId = commerce_ogmk_products_product_has_node($product, $node_type);
+
+  if ($nodeId) {
+    return node_load($nodeId);
+  }
+
+  return NULL;
+}
+
+/**
  * Functions for internal use.
  */
 
