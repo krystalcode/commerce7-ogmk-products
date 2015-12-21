@@ -10,7 +10,7 @@
 function commerce_ogmk_products_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-product-body'
+  // Exported field_instance: 'node-product-body'.
   $field_instances['node-product-body'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -22,6 +22,12 @@ function commerce_ogmk_products_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -54,23 +60,70 @@ function commerce_ogmk_products_field_default_field_instances() {
           ),
         ),
       ),
-      'display_summary' => 1,
-      'text_processing' => 1,
+      'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 3,
+        'rows' => 6,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-product-field_images'
+  // Exported field_instance: 'node-product-field_category_ref'.
+  $field_instances['node-product-field_category_ref'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'app_commons',
+        'settings' => array(
+          'uri' => 'products',
+        ),
+        'type' => 'taxonomy_term_reference_search_link',
+        'weight' => 5,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_category_ref',
+    'label' => 'Category',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-product-field_images'.
   $field_instances['node-product-field_images'] = array(
     'bundle' => 'product',
     'deleted' => 0,
@@ -86,6 +139,16 @@ function commerce_ogmk_products_field_default_field_instances() {
           'title_field' => '',
         ),
         'type' => 'galleria',
+        'weight' => 0,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => '100x80',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -106,6 +169,7 @@ function commerce_ogmk_products_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'node/product/field_images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -122,11 +186,60 @@ function commerce_ogmk_products_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 34,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-product-field_products_ref'
+  // Exported field_instance: 'node-product-field_labels_ref'.
+  $field_instances['node-product-field_labels_ref'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'app_commons',
+        'settings' => array(
+          'uri' => 'products',
+        ),
+        'type' => 'taxonomy_term_reference_search_link',
+        'weight' => 6,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_labels_ref',
+    'label' => 'Labels',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-product-field_products_ref'.
   $field_instances['node-product-field_products_ref'] = array(
     'bundle' => 'product',
     'deleted' => 0,
@@ -145,6 +258,12 @@ function commerce_ogmk_products_field_default_field_instances() {
         'type' => 'commerce_cart_add_to_cart_form',
         'weight' => 4,
       ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -154,9 +273,10 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_products_ref',
-    'label' => 'Products',
+    'label' => 'Variants',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'field_injection' => 1,
       'referenceable_types' => array(
         'product' => 'product',
@@ -183,7 +303,7 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-og_shop_ref'
+  // Exported field_instance: 'node-product-og_shop_ref'.
   $field_instances['node-product-og_shop_ref'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
@@ -191,6 +311,15 @@ function commerce_ogmk_products_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
@@ -226,6 +355,7 @@ function commerce_ogmk_products_field_default_field_instances() {
           'status' => TRUE,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -233,16 +363,68 @@ function commerce_ogmk_products_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 3,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-product-title_field'.
+  $field_instances['node-product-title_field'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Category');
   t('Description');
   t('Images');
-  t('Products');
+  t('Labels');
   t('Shop');
+  t('Title');
+  t('Variants');
 
   return $field_instances;
 }

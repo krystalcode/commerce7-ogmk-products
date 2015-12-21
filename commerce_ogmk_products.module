@@ -41,6 +41,24 @@ function commerce_ogmk_products_theme($existing, $type, $theme, $path) {
 }
 
 /**
+ * Implements hook_entity_info_alter().
+ */
+function commerce_ogmk_products_entity_info_alter(&$entity_info) {
+  /**
+   * @Issue(
+   *   "Maybe this should be moved to a base ogmk module"
+   *   type="task"
+   *   priority="low"
+   *   labels="modularity"
+   * )
+   */
+  $entity_info['node']['view modes']['ogmk_bootstrap_media'] = array(
+    'label' => t('OGMK Bootstrap Media'),
+    'custom settings' => FALSE,
+  );
+}
+
+/**
  * Functions for internal use.
  */
 

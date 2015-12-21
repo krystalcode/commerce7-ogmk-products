@@ -10,21 +10,13 @@
 function commerce_ogmk_products_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_products_ref'
+  // Exported field_base: 'field_products_ref'.
   $field_bases['field_products_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_products_ref',
-    'foreign keys' => array(
-      'product_id' => array(
-        'columns' => array(
-          'product_id' => 'product_id',
-        ),
-        'table' => 'commerce_product',
-      ),
-    ),
     'indexes' => array(
       'product_id' => array(
         0 => 'product_id',
@@ -33,9 +25,10 @@ function commerce_ogmk_products_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_product_reference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'options_list_limit' => '',
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'commerce_product_reference',
   );
 
