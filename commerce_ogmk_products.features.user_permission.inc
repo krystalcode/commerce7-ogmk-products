@@ -41,7 +41,9 @@ function commerce_ogmk_products_user_default_permissions() {
   // Exported permission: 'create commerce_product entities of bundle product'.
   $permissions['create commerce_product entities of bundle product'] = array(
     'name' => 'create commerce_product entities of bundle product',
-    'roles' => array(),
+    'roles' => array(
+      'merchant' => 'merchant',
+    ),
     'module' => 'commerce_product',
   );
 
@@ -97,7 +99,9 @@ function commerce_ogmk_products_user_default_permissions() {
   // Exported permission: 'edit own commerce_product entities of bundle product'.
   $permissions['edit own commerce_product entities of bundle product'] = array(
     'name' => 'edit own commerce_product entities of bundle product',
-    'roles' => array(),
+    'roles' => array(
+      'merchant' => 'merchant',
+    ),
     'module' => 'commerce_product',
   );
 
@@ -125,16 +129,16 @@ function commerce_ogmk_products_user_default_permissions() {
   // Exported permission: 'view own commerce_product entities'.
   $permissions['view own commerce_product entities'] = array(
     'name' => 'view own commerce_product entities',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
+    'roles' => array(),
     'module' => 'commerce_product',
   );
 
   // Exported permission: 'view own commerce_product entities of bundle product'.
   $permissions['view own commerce_product entities of bundle product'] = array(
     'name' => 'view own commerce_product entities of bundle product',
-    'roles' => array(),
+    'roles' => array(
+      'merchant' => 'merchant',
+    ),
     'module' => 'commerce_product',
   );
 
