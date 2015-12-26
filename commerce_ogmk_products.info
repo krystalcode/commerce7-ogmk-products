@@ -20,6 +20,7 @@ dependencies[] = inline_entity_form
 dependencies[] = node
 dependencies[] = og
 dependencies[] = og_ui
+dependencies[] = ogmk_base
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
