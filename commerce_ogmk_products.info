@@ -12,6 +12,7 @@ dependencies[] = commerce_product_pricing_ui
 dependencies[] = commerce_product_reference
 dependencies[] = ctools
 dependencies[] = entityreference
+dependencies[] = entityreference_prepopulate
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = galleria
