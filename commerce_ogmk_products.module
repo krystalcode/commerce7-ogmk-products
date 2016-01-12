@@ -80,7 +80,8 @@ function commerce_ogmk_products_product_has_node($product, $node_type = 'product
     $productId = $product->product_id;
   }
 
-  // Get the Shop owned by the user.
+  // Get the "product" node that corresponds to the given "commerce_product"
+  // entity.
   $query = new EntityFieldQuery();
   $query
     ->entityCondition('entity_type', 'node', '=')
