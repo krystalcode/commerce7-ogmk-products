@@ -412,6 +412,9 @@ function commerce_ogmk_products_strongarm() {
     'full' => 0,
     'teaser' => 0,
     'rss' => 0,
+    'ogmk_bootstrap_media' => 0,
+    'ogmk_manage_teaser' => 0,
+    'diff_standard' => 0,
     'token' => 0,
   );
   $export['sharethis_product_options'] = $strongarm;
