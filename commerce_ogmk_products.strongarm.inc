@@ -45,9 +45,9 @@ function commerce_ogmk_products_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'entity_translation_settings_commerce_product__product';
   $strongarm->value = array(
-    'default_language' => 'es',
+    'default_language' => 'und',
     'hide_language_selector' => 1,
-    'exclude_language_none' => 1,
+    'exclude_language_none' => 0,
     'lock_language' => 0,
     'shared_fields_original_only' => 1,
   );
