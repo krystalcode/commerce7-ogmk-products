@@ -55,7 +55,7 @@ function commerce_ogmk_products_field_group_info() {
     'label' => 'Column 2',
     'weight' => '8',
     'children' => array(
-      0 => 'field_products_ref',
+      0 => 'ogmk_products_ref',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(
@@ -86,7 +86,7 @@ function commerce_ogmk_products_field_group_info() {
     'label' => 'Column 3',
     'weight' => '8',
     'children' => array(
-      0 => 'field_images',
+      0 => 'ogmk_images',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(
@@ -117,8 +117,8 @@ function commerce_ogmk_products_field_group_info() {
     'label' => 'Column 4',
     'weight' => '10',
     'children' => array(
-      0 => 'field_category_ref',
-      1 => 'field_labels_ref',
+      0 => 'ogmk_category_ref',
+      1 => 'ogmk_labels_ref',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(

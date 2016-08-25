@@ -10,13 +10,13 @@
 function commerce_ogmk_products_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_products_ref'.
-  $field_bases['field_products_ref'] = array(
+  // Exported field_base: 'ogmk_products_ref'.
+  $field_bases['ogmk_products_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_products_ref',
+    'field_name' => 'ogmk_products_ref',
     'indexes' => array(
       'product_id' => array(
         0 => 'product_id',

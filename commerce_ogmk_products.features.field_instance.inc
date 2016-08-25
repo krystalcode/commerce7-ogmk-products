@@ -10,8 +10,8 @@
 function commerce_ogmk_products_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'commerce_line_item-product-og_shop_ref'.
-  $field_instances['commerce_line_item-product-og_shop_ref'] = array(
+  // Exported field_instance: 'commerce_line_item-product-ogmk_shop_ref'.
+  $field_instances['commerce_line_item-product-ogmk_shop_ref'] = array(
     'bundle' => 'product',
     'commerce_cart_settings' => array(
       'field_access' => 0,
@@ -29,7 +29,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'commerce_line_item',
-    'field_name' => 'og_shop_ref',
+    'field_name' => 'ogmk_shop_ref',
     'label' => 'Shop',
     'required' => 1,
     'settings' => array(
@@ -69,8 +69,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_order-commerce_order-og_shops_ref'.
-  $field_instances['commerce_order-commerce_order-og_shops_ref'] = array(
+  // Exported field_instance: 'commerce_order-commerce_order-ogmk_shops_ref'.
+  $field_instances['commerce_order-commerce_order-ogmk_shops_ref'] = array(
     'bundle' => 'commerce_order',
     'default_value' => NULL,
     'deleted' => 0,
@@ -85,7 +85,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'commerce_order',
-    'field_name' => 'og_shops_ref',
+    'field_name' => 'ogmk_shops_ref',
     'label' => 'Shops',
     'required' => 1,
     'settings' => array(
@@ -125,8 +125,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_product-product-og_shop_ref'.
-  $field_instances['commerce_product-product-og_shop_ref'] = array(
+  // Exported field_instance: 'commerce_product-product-ogmk_shop_ref'.
+  $field_instances['commerce_product-product-ogmk_shop_ref'] = array(
     'bundle' => 'product',
     'commerce_cart_settings' => array(
       'attribute_field' => 0,
@@ -157,7 +157,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'commerce_product',
-    'field_name' => 'og_shop_ref',
+    'field_name' => 'ogmk_shop_ref',
     'label' => 'Shop',
     'required' => 1,
     'settings' => array(
@@ -252,8 +252,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-field_category_ref'.
-  $field_instances['node-product-field_category_ref'] = array(
+  // Exported field_instance: 'node-product-ogmk_category_ref'.
+  $field_instances['node-product-ogmk_category_ref'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
     'deleted' => 0,
@@ -282,7 +282,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_category_ref',
+    'field_name' => 'ogmk_category_ref',
     'label' => 'Category',
     'required' => 1,
     'settings' => array(
@@ -300,8 +300,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-field_images'.
-  $field_instances['node-product-field_images'] = array(
+  // Exported field_instance: 'node-product-ogmk_images'.
+  $field_instances['node-product-ogmk_images'] = array(
     'bundle' => 'product',
     'deleted' => 0,
     'description' => '',
@@ -340,14 +340,14 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_images',
+    'field_name' => 'ogmk_images',
     'label' => 'Images',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
       'entity_translation_sync' => FALSE,
-      'file_directory' => 'node/product/field_images',
+      'file_directory' => 'node/product/ogmk_images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -367,8 +367,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-field_labels_ref'.
-  $field_instances['node-product-field_labels_ref'] = array(
+  // Exported field_instance: 'node-product-ogmk_labels_ref'.
+  $field_instances['node-product-ogmk_labels_ref'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
     'deleted' => 0,
@@ -397,7 +397,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_labels_ref',
+    'field_name' => 'ogmk_labels_ref',
     'label' => 'Labels',
     'required' => 0,
     'settings' => array(
@@ -416,8 +416,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-field_products_ref'.
-  $field_instances['node-product-field_products_ref'] = array(
+  // Exported field_instance: 'node-product-ogmk_products_ref'.
+  $field_instances['node-product-ogmk_products_ref'] = array(
     'bundle' => 'product',
     'deleted' => 0,
     'description' => '',
@@ -449,7 +449,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_products_ref',
+    'field_name' => 'ogmk_products_ref',
     'label' => 'Variants',
     'required' => 1,
     'settings' => array(
@@ -480,8 +480,8 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-og_shop_ref'.
-  $field_instances['node-product-og_shop_ref'] = array(
+  // Exported field_instance: 'node-product-ogmk_shop_ref'.
+  $field_instances['node-product-ogmk_shop_ref'] = array(
     'bundle' => 'product',
     'default_value' => NULL,
     'default_value_function' => 'entityreference_prepopulate_field_default_value',
@@ -517,7 +517,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'og_shop_ref',
+    'field_name' => 'ogmk_shop_ref',
     'label' => 'Shop',
     'required' => 1,
     'settings' => array(

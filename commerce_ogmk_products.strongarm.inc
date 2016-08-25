@@ -261,7 +261,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:og_shop_ref' => array(
+        'product:ogmk_shop_ref' => array(
           'teaser' => array(
             'weight' => '5',
             'visible' => FALSE,

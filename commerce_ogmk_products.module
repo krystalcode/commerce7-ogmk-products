@@ -86,7 +86,7 @@ function commerce_ogmk_products_product_has_node($product, $node_type = 'product
   $query
     ->entityCondition('entity_type', 'node', '=')
     ->propertyCondition('type', $node_type)
-    ->fieldCondition('field_products_ref', 'product_id', $productId, '=');
+    ->fieldCondition('ogmk_products_ref', 'product_id', $productId, '=');
   $result = $query->execute();
 
   if (empty($result['node'])) {
