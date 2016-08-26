@@ -5,6 +5,22 @@
  */
 
 /**
+ * Implements hook_commerce_product_default_types().
+ */
+function commerce_ogmk_products_commerce_product_default_types() {
+  $items = array(
+    'ogmk_product' => array(
+      'type' => 'ogmk_product',
+      'name' => 'Product',
+      'description' => 'The OGMK basic product type.',
+      'help' => '',
+      'revision' => 1,
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function commerce_ogmk_products_ctools_plugin_api($module = NULL, $api = NULL) {
@@ -28,7 +44,7 @@ function commerce_ogmk_products_views_api($module = NULL, $api = NULL) {
  */
 function commerce_ogmk_products_node_info() {
   $items = array(
-    'product' => array(
+    'ogmk_product' => array(
       'name' => t('Product'),
       'base' => 'node_content',
       'description' => '',

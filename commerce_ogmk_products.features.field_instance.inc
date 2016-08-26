@@ -10,9 +10,9 @@
 function commerce_ogmk_products_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'commerce_line_item-product-ogmk_shop_ref'.
-  $field_instances['commerce_line_item-product-ogmk_shop_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'commerce_line_item-ogmk_product-ogmk_shop_ref'.
+  $field_instances['commerce_line_item-ogmk_product-ogmk_shop_ref'] = array(
+    'bundle' => 'ogmk_product',
     'commerce_cart_settings' => array(
       'field_access' => 0,
     ),
@@ -125,9 +125,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_product-product-ogmk_shop_ref'.
-  $field_instances['commerce_product-product-ogmk_shop_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'commerce_product-ogmk_product-ogmk_shop_ref'.
+  $field_instances['commerce_product-ogmk_product-ogmk_shop_ref'] = array(
+    'bundle' => 'ogmk_product',
     'commerce_cart_settings' => array(
       'attribute_field' => 0,
       'attribute_widget' => 'select',
@@ -185,9 +185,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-body'.
-  $field_instances['node-product-body'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-body'.
+  $field_instances['node-ogmk_product-body'] = array(
+    'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -252,9 +252,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-ogmk_category_ref'.
-  $field_instances['node-product-ogmk_category_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-ogmk_category_ref'.
+  $field_instances['node-ogmk_product-ogmk_category_ref'] = array(
+    'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -300,9 +300,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-ogmk_images'.
-  $field_instances['node-product-ogmk_images'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-ogmk_images'.
+  $field_instances['node-ogmk_product-ogmk_images'] = array(
+    'bundle' => 'ogmk_product',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -347,7 +347,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       'alt_field' => 0,
       'default_image' => 0,
       'entity_translation_sync' => FALSE,
-      'file_directory' => 'node/product/ogmk_images',
+      'file_directory' => 'node/ogmk_product/ogmk_images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -367,9 +367,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-ogmk_labels_ref'.
-  $field_instances['node-product-ogmk_labels_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-ogmk_labels_ref'.
+  $field_instances['node-ogmk_product-ogmk_labels_ref'] = array(
+    'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -416,9 +416,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-ogmk_products_ref'.
-  $field_instances['node-product-ogmk_products_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-ogmk_products_ref'.
+  $field_instances['node-ogmk_product-ogmk_products_ref'] = array(
+    'bundle' => 'ogmk_product',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -428,7 +428,7 @@ function commerce_ogmk_products_field_default_field_instances() {
         'settings' => array(
           'combine' => 1,
           'default_quantity' => 1,
-          'line_item_type' => 'product',
+          'line_item_type' => 'ogmk_product',
           'show_quantity' => 1,
           'show_single_product_attributes' => 0,
         ),
@@ -456,7 +456,7 @@ function commerce_ogmk_products_field_default_field_instances() {
       'entity_translation_sync' => FALSE,
       'field_injection' => 1,
       'referenceable_types' => array(
-        'product' => 'product',
+        'ogmk_product' => 'ogmk_product',
       ),
       'user_register_form' => FALSE,
     ),
@@ -480,9 +480,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-ogmk_shop_ref'.
-  $field_instances['node-product-ogmk_shop_ref'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-ogmk_shop_ref'.
+  $field_instances['node-ogmk_product-ogmk_shop_ref'] = array(
+    'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'default_value_function' => 'entityreference_prepopulate_field_default_value',
     'deleted' => 0,
@@ -556,9 +556,9 @@ function commerce_ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product-title_field'.
-  $field_instances['node-product-title_field'] = array(
-    'bundle' => 'product',
+  // Exported field_instance: 'node-ogmk_product-title_field'.
+  $field_instances['node-ogmk_product-title_field'] = array(
+    'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

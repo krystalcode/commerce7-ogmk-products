@@ -13,10 +13,10 @@ function commerce_ogmk_products_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_col1|node|product|form';
+  $field_group->identifier = 'group_col1|node|ogmk_product|form';
   $field_group->group_name = 'group_col1';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_row1';
   $field_group->data = array(
@@ -40,15 +40,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_col1|node|product|form'] = $field_group;
+  $export['group_col1|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_col2|node|product|form';
+  $field_group->identifier = 'group_col2|node|ogmk_product|form';
   $field_group->group_name = 'group_col2';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_row2';
   $field_group->data = array(
@@ -71,15 +71,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_col2|node|product|form'] = $field_group;
+  $export['group_col2|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_col3|node|product|form';
+  $field_group->identifier = 'group_col3|node|ogmk_product|form';
   $field_group->group_name = 'group_col3';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_row3';
   $field_group->data = array(
@@ -102,15 +102,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_col3|node|product|form'] = $field_group;
+  $export['group_col3|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_col4|node|product|form';
+  $field_group->identifier = 'group_col4|node|ogmk_product|form';
   $field_group->group_name = 'group_col4';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_row4';
   $field_group->data = array(
@@ -134,15 +134,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_col4|node|product|form'] = $field_group;
+  $export['group_col4|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_row1|node|product|form';
+  $field_group->identifier = 'group_row1|node|ogmk_product|form';
   $field_group->group_name = 'group_row1';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -170,15 +170,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_row1|node|product|form'] = $field_group;
+  $export['group_row1|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_row2|node|product|form';
+  $field_group->identifier = 'group_row2|node|ogmk_product|form';
   $field_group->group_name = 'group_row2';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -206,15 +206,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_row2|node|product|form'] = $field_group;
+  $export['group_row2|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_row3|node|product|form';
+  $field_group->identifier = 'group_row3|node|ogmk_product|form';
   $field_group->group_name = 'group_row3';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -242,15 +242,15 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_row3|node|product|form'] = $field_group;
+  $export['group_row3|node|ogmk_product|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_row4|node|product|form';
+  $field_group->identifier = 'group_row4|node|ogmk_product|form';
   $field_group->group_name = 'group_row4';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'product';
+  $field_group->bundle = 'ogmk_product';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -278,7 +278,7 @@ function commerce_ogmk_products_field_group_info() {
       ),
     ),
   );
-  $export['group_row4|node|product|form'] = $field_group;
+  $export['group_row4|node|ogmk_product|form'] = $field_group;
 
   return $export;
 }

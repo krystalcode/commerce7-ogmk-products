@@ -38,32 +38,32 @@ function commerce_ogmk_products_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'create commerce_product entities of bundle product'.
-  $permissions['create commerce_product entities of bundle product'] = array(
-    'name' => 'create commerce_product entities of bundle product',
+  // Exported permission: 'create commerce_product entities of bundle ogmk_product'.
+  $permissions['create commerce_product entities of bundle ogmk_product'] = array(
+    'name' => 'create commerce_product entities of bundle ogmk_product',
     'roles' => array(
       'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'create product content'.
-  $permissions['create product content'] = array(
-    'name' => 'create product content',
+  // Exported permission: 'create ogmk_product content'.
+  $permissions['create ogmk_product content'] = array(
+    'name' => 'create ogmk_product content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any product content'.
-  $permissions['delete any product content'] = array(
-    'name' => 'delete any product content',
+  // Exported permission: 'delete any ogmk_product content'.
+  $permissions['delete any ogmk_product content'] = array(
+    'name' => 'delete any ogmk_product content',
     'roles' => array(),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own product content'.
-  $permissions['delete own product content'] = array(
-    'name' => 'delete own product content',
+  // Exported permission: 'delete own ogmk_product content'.
+  $permissions['delete own ogmk_product content'] = array(
+    'name' => 'delete own ogmk_product content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -75,16 +75,16 @@ function commerce_ogmk_products_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'edit any commerce_product entity of bundle product'.
-  $permissions['edit any commerce_product entity of bundle product'] = array(
-    'name' => 'edit any commerce_product entity of bundle product',
+  // Exported permission: 'edit any commerce_product entity of bundle ogmk_product'.
+  $permissions['edit any commerce_product entity of bundle ogmk_product'] = array(
+    'name' => 'edit any commerce_product entity of bundle ogmk_product',
     'roles' => array(),
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'edit any product content'.
-  $permissions['edit any product content'] = array(
-    'name' => 'edit any product content',
+  // Exported permission: 'edit any ogmk_product content'.
+  $permissions['edit any ogmk_product content'] = array(
+    'name' => 'edit any ogmk_product content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -96,18 +96,18 @@ function commerce_ogmk_products_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'edit own commerce_product entities of bundle product'.
-  $permissions['edit own commerce_product entities of bundle product'] = array(
-    'name' => 'edit own commerce_product entities of bundle product',
+  // Exported permission: 'edit own commerce_product entities of bundle ogmk_product'.
+  $permissions['edit own commerce_product entities of bundle ogmk_product'] = array(
+    'name' => 'edit own commerce_product entities of bundle ogmk_product',
     'roles' => array(
       'merchant' => 'merchant',
     ),
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'edit own product content'.
-  $permissions['edit own product content'] = array(
-    'name' => 'edit own product content',
+  // Exported permission: 'edit own ogmk_product content'.
+  $permissions['edit own ogmk_product content'] = array(
+    'name' => 'edit own ogmk_product content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -119,9 +119,9 @@ function commerce_ogmk_products_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'view any commerce_product entity of bundle product'.
-  $permissions['view any commerce_product entity of bundle product'] = array(
-    'name' => 'view any commerce_product entity of bundle product',
+  // Exported permission: 'view any commerce_product entity of bundle ogmk_product'.
+  $permissions['view any commerce_product entity of bundle ogmk_product'] = array(
+    'name' => 'view any commerce_product entity of bundle ogmk_product',
     'roles' => array(),
     'module' => 'commerce_product',
   );
@@ -133,9 +133,9 @@ function commerce_ogmk_products_user_default_permissions() {
     'module' => 'commerce_product',
   );
 
-  // Exported permission: 'view own commerce_product entities of bundle product'.
-  $permissions['view own commerce_product entities of bundle product'] = array(
-    'name' => 'view own commerce_product entities of bundle product',
+  // Exported permission: 'view own commerce_product entities of bundle ogmk_product'.
+  $permissions['view own commerce_product entities of bundle ogmk_product'] = array(
+    'name' => 'view own commerce_product entities of bundle ogmk_product',
     'roles' => array(
       'merchant' => 'merchant',
     ),

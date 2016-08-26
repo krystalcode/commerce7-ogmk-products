@@ -59,6 +59,25 @@ function commerce_ogmk_products_entity_info_alter(&$entity_info) {
 }
 
 /**
+ * Implements hook_commerce_line_item_type_info().
+ *
+ * Provides a custom line item type for 'ogmk_product' products.
+ */
+function commerce_ogmk_products_commerce_line_item_type_info() {
+  $line_item_types = array();
+
+  $line_item_types['ogmk_product'] = array(
+    'name' => t('Product'),
+    'description' => t('Line item for OGMK products'),
+    'product' => TRUE,
+    'add_form_submit_value' => t('Add product'),
+    'base' => 'commerce_product_line_item',
+  );
+
+  return $line_item_types;
+}
+
+/**
  * Public API.
  */
 
@@ -72,7 +91,7 @@ function commerce_ogmk_products_entity_info_alter(&$entity_info) {
  *   Zero (0) if there is no node referencing the product.
  *   The node's id otherwise.
  */
-function commerce_ogmk_products_product_has_node($product, $node_type = 'product') {
+function commerce_ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
   $productId = NULL;
   if (is_int($product)) {
     $productId = $product;
@@ -108,7 +127,7 @@ function commerce_ogmk_products_product_has_node($product, $node_type = 'product
  *   NULL if there is no node referencing the product.
  *   The node's object otherwise.
  */
-function commerce_ogmk_products_product_get_node($product, $node_type = 'product') {
+function commerce_ogmk_products_product_get_node($product, $node_type = 'ogmk_product') {
   $nodeId = commerce_ogmk_products_product_has_node($product, $node_type);
 
   if ($nodeId) {

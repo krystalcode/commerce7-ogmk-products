@@ -22,28 +22,28 @@ function commerce_ogmk_products_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_product';
+  $strongarm->name = 'additional_settings__active_tab_ogmk_product';
   $strongarm->value = 'edit-workflow';
-  $export['additional_settings__active_tab_product'] = $strongarm;
+  $export['additional_settings__active_tab_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'entity_translation_hide_translation_links_product';
+  $strongarm->name = 'entity_translation_hide_translation_links_ogmk_product';
   $strongarm->value = 1;
-  $export['entity_translation_hide_translation_links_product'] = $strongarm;
+  $export['entity_translation_hide_translation_links_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'entity_translation_node_metadata_product';
+  $strongarm->name = 'entity_translation_node_metadata_ogmk_product';
   $strongarm->value = '0';
-  $export['entity_translation_node_metadata_product'] = $strongarm;
+  $export['entity_translation_node_metadata_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'entity_translation_settings_commerce_product__product';
+  $strongarm->name = 'entity_translation_settings_commerce_product__ogmk_product';
   $strongarm->value = array(
     'default_language' => 'und',
     'hide_language_selector' => 1,
@@ -51,12 +51,12 @@ function commerce_ogmk_products_strongarm() {
     'lock_language' => 0,
     'shared_fields_original_only' => 1,
   );
-  $export['entity_translation_settings_commerce_product__product'] = $strongarm;
+  $export['entity_translation_settings_commerce_product__ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'entity_translation_settings_node__product';
+  $strongarm->name = 'entity_translation_settings_node__ogmk_product';
   $strongarm->value = array(
     'default_language' => 'und',
     'hide_language_selector' => 1,
@@ -64,12 +64,12 @@ function commerce_ogmk_products_strongarm() {
     'lock_language' => 0,
     'shared_fields_original_only' => 1,
   );
-  $export['entity_translation_settings_node__product'] = $strongarm;
+  $export['entity_translation_settings_node__ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_commerce_line_item__product';
+  $strongarm->name = 'field_bundle_settings_commerce_line_item__ogmk_product';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -84,12 +84,12 @@ function commerce_ogmk_products_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_commerce_line_item__product'] = $strongarm;
+  $export['field_bundle_settings_commerce_line_item__ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_commerce_product__product';
+  $strongarm->name = 'field_bundle_settings_commerce_product__ogmk_product';
   $strongarm->value = array(
     'view_modes' => array(
       'ogmk_bootstrap_media' => array(
@@ -168,12 +168,12 @@ function commerce_ogmk_products_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_commerce_product__product'] = $strongarm;
+  $export['field_bundle_settings_commerce_product__ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__product';
+  $strongarm->name = 'field_bundle_settings_node__ogmk_product';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -205,7 +205,7 @@ function commerce_ogmk_products_strongarm() {
         ),
       ),
       'display' => array(
-        'product:sku' => array(
+        'ogmk_product:sku' => array(
           'teaser' => array(
             'weight' => '6',
             'visible' => FALSE,
@@ -219,7 +219,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:title' => array(
+        'ogmk_product:title' => array(
           'teaser' => array(
             'weight' => '7',
             'visible' => FALSE,
@@ -233,7 +233,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:status' => array(
+        'ogmk_product:status' => array(
           'teaser' => array(
             'weight' => '11',
             'visible' => FALSE,
@@ -247,7 +247,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:commerce_price' => array(
+        'ogmk_product:commerce_price' => array(
           'teaser' => array(
             'weight' => '1',
             'visible' => TRUE,
@@ -261,7 +261,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:ogmk_shop_ref' => array(
+        'ogmk_product:ogmk_shop_ref' => array(
           'teaser' => array(
             'weight' => '5',
             'visible' => FALSE,
@@ -289,7 +289,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => FALSE,
           ),
         ),
-        'product:title_field' => array(
+        'ogmk_product:title_field' => array(
           'default' => array(
             'weight' => '-5',
             'visible' => TRUE,
@@ -302,112 +302,112 @@ function commerce_ogmk_products_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_node__product'] = $strongarm;
+  $export['field_bundle_settings_node__ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_product';
+  $strongarm->name = 'language_content_type_ogmk_product';
   $strongarm->value = '4';
-  $export['language_content_type_product'] = $strongarm;
+  $export['language_content_type_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_product_type_product';
+  $strongarm->name = 'language_product_type_ogmk_product';
   $strongarm->value = '4';
-  $export['language_product_type_product'] = $strongarm;
+  $export['language_product_type_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_product';
+  $strongarm->name = 'menu_options_ogmk_product';
   $strongarm->value = array();
-  $export['menu_options_product'] = $strongarm;
+  $export['menu_options_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_product';
+  $strongarm->name = 'menu_parent_ogmk_product';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_product'] = $strongarm;
+  $export['menu_parent_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_product';
+  $strongarm->name = 'node_options_ogmk_product';
   $strongarm->value = array(
     0 => 'revision',
   );
-  $export['node_options_product'] = $strongarm;
+  $export['node_options_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_product_display';
+  $strongarm->name = 'node_options_ogmk_product_display';
   $strongarm->value = array();
-  $export['node_options_product_display'] = $strongarm;
+  $export['node_options_ogmk_product_display'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_product';
+  $strongarm->name = 'node_preview_ogmk_product';
   $strongarm->value = '0';
-  $export['node_preview_product'] = $strongarm;
+  $export['node_preview_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_product';
+  $strongarm->name = 'node_submitted_ogmk_product';
   $strongarm->value = 0;
-  $export['node_submitted_product'] = $strongarm;
+  $export['node_submitted_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_product_display';
+  $strongarm->name = 'node_submitted_ogmk_product_display';
   $strongarm->value = 0;
-  $export['node_submitted_product_display'] = $strongarm;
+  $export['node_submitted_ogmk_product_display'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_product_en_pattern';
+  $strongarm->name = 'pathauto_node_ogmk_product_en_pattern';
   $strongarm->value = 'products/[node:nid]/[node:title]';
-  $export['pathauto_node_product_en_pattern'] = $strongarm;
+  $export['pathauto_node_ogmk_product_en_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_product_es_pattern';
+  $strongarm->name = 'pathauto_node_ogmk_product_es_pattern';
   $strongarm->value = 'productos/[node:nid]/[node:title]';
-  $export['pathauto_node_product_es_pattern'] = $strongarm;
+  $export['pathauto_node_ogmk_product_es_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_product_pattern';
+  $strongarm->name = 'pathauto_node_ogmk_product_pattern';
   $strongarm->value = 'products/[node:nid]/[node:title]';
-  $export['pathauto_node_product_pattern'] = $strongarm;
+  $export['pathauto_node_ogmk_product_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_product_und_pattern';
+  $strongarm->name = 'pathauto_node_ogmk_product_und_pattern';
   $strongarm->value = 'products/[node:nid]/[node:title]';
-  $export['pathauto_node_product_und_pattern'] = $strongarm;
+  $export['pathauto_node_ogmk_product_und_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_product';
+  $strongarm->name = 'save_continue_ogmk_product';
   $strongarm->value = 'Save and add fields';
-  $export['save_continue_product'] = $strongarm;
+  $export['save_continue_ogmk_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_product_options';
+  $strongarm->name = 'sharethis_ogmk_product_options';
   $strongarm->value = array(
     'full' => 0,
     'teaser' => 0,
@@ -417,7 +417,7 @@ function commerce_ogmk_products_strongarm() {
     'diff_standard' => 0,
     'token' => 0,
   );
-  $export['sharethis_product_options'] = $strongarm;
+  $export['sharethis_ogmk_product_options'] = $strongarm;
 
   return $export;
 }
