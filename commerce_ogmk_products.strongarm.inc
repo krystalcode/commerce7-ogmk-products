@@ -125,6 +125,15 @@ function commerce_ogmk_products_strongarm() {
       'node_token' => array(
         'custom_settings' => FALSE,
       ),
+      'commerce_line_item_ogmk_review' => array(
+        'custom_settings' => FALSE,
+      ),
+      'node_info' => array(
+        'custom_settings' => FALSE,
+      ),
+      'node_ogmk_bootstrap_media' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -145,13 +154,17 @@ function commerce_ogmk_products_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '4',
+            'weight' => '5',
             'visible' => FALSE,
           ),
         ),
         'title' => array(
           'line_item' => array(
             'weight' => '-5',
+            'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '0',
             'visible' => TRUE,
           ),
         ),
@@ -161,7 +174,7 @@ function commerce_ogmk_products_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => FALSE,
           ),
         ),
