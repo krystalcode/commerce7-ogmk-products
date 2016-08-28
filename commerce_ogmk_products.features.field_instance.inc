@@ -27,6 +27,12 @@ function commerce_ogmk_products_field_default_field_instances() {
         'type' => 'og_list_default',
         'weight' => 4,
       ),
+      'ogmk_review' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
     ),
     'entity_type' => 'commerce_line_item',
     'field_name' => 'ogmk_shop_ref',
@@ -144,6 +150,12 @@ function commerce_ogmk_products_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'node_ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'node_teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -191,6 +203,12 @@ function commerce_ogmk_products_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'node_ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'node_teaser' => array(
         'label' => 'above',

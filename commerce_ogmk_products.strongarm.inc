@@ -71,7 +71,17 @@ function commerce_ogmk_products_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_commerce_line_item__ogmk_product';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'ogmk_review' => array(
+        'custom_settings' => TRUE,
+      ),
+      'display' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'label' => array(
@@ -81,7 +91,28 @@ function commerce_ogmk_products_strongarm() {
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'label' => array(
+          'default' => array(
+            'weight' => '-10',
+            'visible' => TRUE,
+          ),
+          'ogmk_review' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+        'quantity' => array(
+          'default' => array(
+            'weight' => '-5',
+            'visible' => TRUE,
+          ),
+          'ogmk_review' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_commerce_line_item__ogmk_product'] = $strongarm;
