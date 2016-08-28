@@ -99,4 +99,4 @@ features[variable][] = pathauto_node_ogmk_product_pattern
 features[variable][] = pathauto_node_ogmk_product_und_pattern
 features[variable][] = save_continue_ogmk_product
 features[variable][] = sharethis_ogmk_product_options
-features[views_view][] = commerce_ogmk_user_orders
+features[views_view][] = ogmk_user_orders
