@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.views_default.inc
+ * ogmk_products.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function commerce_ogmk_products_views_default_views() {
+function ogmk_products_views_default_views() {
   $export = array();
 
   $view = new view();

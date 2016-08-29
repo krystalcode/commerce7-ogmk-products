@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.field_group.inc
+ * ogmk_products.field_group.inc
  */
 
 /**
  * Implements hook_field_group_info().
  */
-function commerce_ogmk_products_field_group_info() {
+function ogmk_products_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();

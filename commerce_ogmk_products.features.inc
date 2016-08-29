@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.features.inc
+ * ogmk_products.features.inc
  */
 
 /**
  * Implements hook_commerce_product_default_types().
  */
-function commerce_ogmk_products_commerce_product_default_types() {
+function ogmk_products_commerce_product_default_types() {
   $items = array(
     'ogmk_product' => array(
       'type' => 'ogmk_product',
@@ -23,7 +23,7 @@ function commerce_ogmk_products_commerce_product_default_types() {
 /**
  * Implements hook_ctools_plugin_api().
  */
-function commerce_ogmk_products_ctools_plugin_api($module = NULL, $api = NULL) {
+function ogmk_products_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -35,14 +35,14 @@ function commerce_ogmk_products_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function commerce_ogmk_products_views_api($module = NULL, $api = NULL) {
+function ogmk_products_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function commerce_ogmk_products_node_info() {
+function ogmk_products_node_info() {
   $items = array(
     'ogmk_product' => array(
       'name' => t('Product'),

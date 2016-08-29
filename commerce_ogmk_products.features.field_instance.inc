@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.features.field_instance.inc
+ * ogmk_products.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function commerce_ogmk_products_field_default_field_instances() {
+function ogmk_products_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'commerce_line_item-ogmk_product-ogmk_shop_ref'.

@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.strongarm.inc
+ * ogmk_products.strongarm.inc
  */
 
 /**
@@ -16,7 +16,7 @@
 /**
  * Implements hook_strongarm().
  */
-function commerce_ogmk_products_strongarm() {
+function ogmk_products_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

@@ -4,7 +4,7 @@
  * Code for the Commerce Marketplace Products feature.
  */
 
-include_once 'commerce_ogmk_products.features.inc';
+include_once 'ogmk_products.features.inc';
 
 /**
  * Hooks.
@@ -13,7 +13,7 @@ include_once 'commerce_ogmk_products.features.inc';
 /**
  * Implements hook_theme().
  */
-function commerce_ogmk_products_theme($existing, $type, $theme, $path) {
+function ogmk_products_theme($existing, $type, $theme, $path) {
   return array(
     'user_orders_page' => array(
       'variables' => array('variables' => NULL),
@@ -25,7 +25,7 @@ function commerce_ogmk_products_theme($existing, $type, $theme, $path) {
 /**
  * Implements hook_entity_info_alter().
  */
-function commerce_ogmk_products_entity_info_alter(&$entity_info) {
+function ogmk_products_entity_info_alter(&$entity_info) {
   /**
    * @Issue(
    *   "Maybe this should be moved to a base ogmk module"
@@ -45,7 +45,7 @@ function commerce_ogmk_products_entity_info_alter(&$entity_info) {
  *
  * Provides a custom line item type for 'ogmk_product' products.
  */
-function commerce_ogmk_products_commerce_line_item_type_info() {
+function ogmk_products_commerce_line_item_type_info() {
   $line_item_types = array();
 
   $line_item_types['ogmk_product'] = array(
@@ -73,7 +73,7 @@ function commerce_ogmk_products_commerce_line_item_type_info() {
  *   Zero (0) if there is no node referencing the product.
  *   The node's id otherwise.
  */
-function commerce_ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
+function ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
   $productId = NULL;
   if (is_int($product)) {
     $productId = $product;
@@ -109,8 +109,8 @@ function commerce_ogmk_products_product_has_node($product, $node_type = 'ogmk_pr
  *   NULL if there is no node referencing the product.
  *   The node's object otherwise.
  */
-function commerce_ogmk_products_product_get_node($product, $node_type = 'ogmk_product') {
-  $nodeId = commerce_ogmk_products_product_has_node($product, $node_type);
+function ogmk_products_product_get_node($product, $node_type = 'ogmk_product') {
+  $nodeId = ogmk_products_product_has_node($product, $node_type);
 
   if ($nodeId) {
     return node_load($nodeId);

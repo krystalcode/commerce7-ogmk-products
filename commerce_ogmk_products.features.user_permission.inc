@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * commerce_ogmk_products.features.user_permission.inc
+ * ogmk_products.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function commerce_ogmk_products_user_default_permissions() {
+function ogmk_products_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'administer commerce_product entities'.
