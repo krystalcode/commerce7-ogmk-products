@@ -258,19 +258,19 @@ function ogmk_products_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'node',
@@ -313,6 +313,55 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ogmk_product-ogmk_boolean'.
+  $field_instances['node-ogmk_product-ogmk_boolean'] = array(
+    'bundle' => 'ogmk_product',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_boolean',
+    'label' => 'Archived',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-ogmk_product-ogmk_category_ref'.
   $field_instances['node-ogmk_product-ogmk_category_ref'] = array(
     'bundle' => 'ogmk_product',
@@ -327,19 +376,19 @@ function ogmk_products_field_default_field_instances() {
           'uri' => 'products',
         ),
         'type' => 'taxonomy_term_reference_search_link',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'node',
@@ -397,7 +446,7 @@ function ogmk_products_field_default_field_instances() {
           'image_style' => 'views_bootstrap_thumbnails',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -442,19 +491,19 @@ function ogmk_products_field_default_field_instances() {
           'uri' => 'products',
         ),
         'type' => 'taxonomy_term_reference_search_link',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'node',
@@ -494,19 +543,19 @@ function ogmk_products_field_default_field_instances() {
           'show_single_product_attributes' => 0,
         ),
         'type' => 'commerce_cart_add_to_cart_form',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'node',
@@ -556,7 +605,7 @@ function ogmk_products_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
@@ -565,7 +614,7 @@ function ogmk_products_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -574,7 +623,7 @@ function ogmk_products_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -613,7 +662,7 @@ function ogmk_products_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -628,7 +677,7 @@ function ogmk_products_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 13,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
@@ -639,13 +688,13 @@ function ogmk_products_field_default_field_instances() {
           'title_style' => '_none',
         ),
         'type' => 'title_linked',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -673,6 +722,7 @@ function ogmk_products_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Archived');
   t('Category');
   t('Costs');
   t('Description');

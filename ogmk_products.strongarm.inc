@@ -245,7 +245,7 @@ function ogmk_products_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -321,15 +321,15 @@ function ogmk_products_strongarm() {
         ),
         'sharethis' => array(
           'teaser' => array(
-            'weight' => '3',
+            'weight' => '8',
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'ogmk_bootstrap_media' => array(
-            'weight' => '9',
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),
