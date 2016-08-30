@@ -346,7 +346,7 @@ function ogmk_products_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'ogmk_boolean',
     'label' => 'Archived',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
