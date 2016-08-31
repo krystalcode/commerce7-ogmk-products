@@ -51,6 +51,7 @@ features[field_instance][] = commerce_line_item-ogmk_product-ogmk_shop_ref
 features[field_instance][] = commerce_order-commerce_order-ogmk_shops_ref
 features[field_instance][] = commerce_product-ogmk_product-ogmk_costs
 features[field_instance][] = commerce_product-ogmk_product-ogmk_shop_ref
+features[field_instance][] = commerce_product-ogmk_product-title_field
 features[field_instance][] = node-ogmk_product-body
 features[field_instance][] = node-ogmk_product-ogmk_boolean
 features[field_instance][] = node-ogmk_product-ogmk_category_ref
