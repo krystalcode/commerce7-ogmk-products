@@ -4,10 +4,14 @@ core = 7.x
 package = Commerce Marketplace Features
 version = 7.x-0.1-dev
 project = ogmk_products
-dependencies[] = commerce_cart
-dependencies[] = commerce_features
+
+; OGMK dependencies.
 dependencies[] = ogmk_shops
 dependencies[] = ogmk_taxonomy
+
+; Other dependencies.
+dependencies[] = commerce_cart
+dependencies[] = commerce_features
 dependencies[] = commerce_order
 dependencies[] = commerce_product
 dependencies[] = commerce_product_pricing_ui
@@ -33,6 +37,7 @@ dependencies[] = text
 dependencies[] = title
 dependencies[] = views
 dependencies[] = views_bootstrap
+
 features[commerce_product_type][] = ogmk_product
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
