@@ -32,5 +32,26 @@ function ogmk_products_field_default_field_bases() {
     'type' => 'commerce_product_reference',
   );
 
+  // Exported field_base: 'ogmk_weight'.
+  $field_bases['ogmk_weight'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'ogmk_weight',
+    'indexes' => array(
+      'weight' => array(
+        0 => 'weight',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'physical',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'physical_weight',
+  );
+
   return $field_bases;
 }

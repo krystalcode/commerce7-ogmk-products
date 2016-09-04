@@ -242,7 +242,54 @@ function ogmk_products_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 0,
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'commerce_product-ogmk_product-ogmk_weight'.
+  $field_instances['commerce_product-ogmk_product-ogmk_weight'] = array(
+    'bundle' => 'ogmk_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'physical',
+        'settings' => array(),
+        'type' => 'physical_weight_formatted',
+        'weight' => 4,
+      ),
+      'line_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'node_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'commerce_product',
+    'field_name' => 'ogmk_weight',
+    'label' => 'Weight',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'physical',
+      'settings' => array(
+        'default_unit' => 'g',
+        'unit_select_list' => 0,
+      ),
+      'type' => 'physical_weight_textfield',
+      'weight' => 5,
     ),
   );
 
@@ -292,7 +339,7 @@ function ogmk_products_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -5,
+      'weight' => 0,
     ),
   );
 
@@ -782,6 +829,7 @@ function ogmk_products_field_default_field_instances() {
   t('Shops');
   t('Title');
   t('Variants');
+  t('Weight');
 
   return $field_instances;
 }
