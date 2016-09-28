@@ -377,14 +377,14 @@ function ogmk_products_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'basic_html' => 'basic_html',
+          'ogmk_basic_html' => 'ogmk_basic_html',
           'plain_text' => 0,
         ),
         'allowed_formats_toggle' => 1,
         'default_order_toggle' => 0,
         'default_order_wrapper' => array(
           'formats' => array(
-            'basic_html' => array(
+            'ogmk_basic_html' => array(
               'weight' => 0,
             ),
             'plain_text' => array(
