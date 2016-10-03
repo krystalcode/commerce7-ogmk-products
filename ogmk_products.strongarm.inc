@@ -224,7 +224,7 @@ function ogmk_products_strongarm() {
           'weight' => '2',
         ),
         'status' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
       ),
       'display' => array(
@@ -234,7 +234,7 @@ function ogmk_products_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => FALSE,
           ),
         ),
@@ -254,7 +254,7 @@ function ogmk_products_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '4',
+            'weight' => '5',
             'visible' => FALSE,
           ),
         ),
