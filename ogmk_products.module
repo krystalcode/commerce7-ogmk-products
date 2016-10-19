@@ -60,6 +60,20 @@ function ogmk_products_commerce_line_item_type_info() {
 }
 
 /**
+ * Implements hook_node_insert().
+ */
+function ogmk_products_node_insert($node) {
+  _ogmk_products_generate_skus($node);
+}
+
+/**
+ * Implements hook_node_update().
+ */
+function ogmk_products_node_update($node) {
+  _ogmk_products_generate_skus($node);
+}
+
+/**
  * Public API.
  */
 
@@ -122,3 +136,67 @@ function ogmk_products_product_get_node($product, $node_type = 'ogmk_product') {
 /**
  * Functions for internal use.
  */
+
+/**
+ * Set the SKU for a created or updated product variant.
+ *
+ * Generate and save the SKU for commerce_product entities, so that they follow
+ * the pattern 'S%shop_id%P%product_id%V%variant_id%', where 'product_id' is the
+ * corresponding node id and 'variant_id' is the commerce product's id.
+ *
+ * This function is expecting the product node as an argument and is being
+ * called by hook_node_insert/update() hooks. We do so, instead of using
+ * hook_entity_insert/update() hooks for the inserted/updated commerce_product
+ * entities, because the variants are created using inline entity forms and they
+ * may orphaned variants (without a shop or product node association) until the
+ * product node is actually saved.
+ *
+ * @param object $node The product node that holds the variants for which SKUs
+ *                     will be generated.
+ *
+ * @Issue(
+ *   "Support customisation of the SKU pattern through an api hook and/or a
+ *   system variable"
+ *   type="improvement"
+ *   priority="low"
+ *   labels="modularity"
+ * )
+ */
+function _ogmk_products_generate_skus($node) {
+  if ($node->type !== 'ogmk_product') {
+    return;
+  }
+
+  $node_wrapper = entity_metadata_wrapper('node', $node);
+  $variants = $node_wrapper->ogmk_products_ref->value();
+
+  // Nothing to do if the product has no variants yet.
+  if (empty($variants)) {
+    return;
+  }
+
+  // We will need the shop id.
+  /**
+   * @Issue(
+   *   "Get the shop identifier only instead of loading the full node"
+   *   type="improvement"
+   *   priority="low"
+   *   labels="performance"
+   * )
+   */
+  $shop = $node_wrapper->ogmk_shop_ref->value();
+
+  // Generate and save the SKU for each variant.
+  foreach ($variants as $variant) {
+    // When the variant is first created, it contains a timestamp-based number
+    // as the SKU. If the SKU starts with 'S', we have already generated the SKU
+    // for the variant - we don't need to do it again.
+    if (strpos($variant->sku, 'S') === 0) {
+      continue;
+    }
+
+    // Generate the SKU and save the variant.
+    $variant->sku = 'S' . $shop->nid . 'P' . $node->nid . 'V' . $variant->product_id;
+    entity_save('commerce_product', $variant);
+  }
+}
