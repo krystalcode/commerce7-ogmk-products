@@ -287,6 +287,12 @@ function ogmk_products_strongarm() {
       'ogmk_manage_teaser' => array(
         'custom_settings' => FALSE,
       ),
+      'info' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -295,6 +301,9 @@ function ogmk_products_strongarm() {
         ),
         'path' => array(
           'weight' => '6',
+        ),
+        'metatags' => array(
+          'weight' => '40',
         ),
       ),
       'display' => array(
@@ -370,11 +379,11 @@ function ogmk_products_strongarm() {
         ),
         'sharethis' => array(
           'teaser' => array(
-            'weight' => '8',
+            'weight' => '11',
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '9',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'ogmk_bootstrap_media' => array(

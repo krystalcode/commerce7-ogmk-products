@@ -61,13 +61,19 @@ function ogmk_products_field_group_info() {
     'format_settings' => array(
       'label' => 'Column 2',
       'instance_settings' => array(
-        'panelize' => '0',
+        'panelize' => '1',
+        'show_heading' => '0',
+        'heading_position' => '0',
+        'label_element' => 'h3',
+        'description_element' => 'p',
+        'panel_style' => 'default',
         'bootstrap_grid_col_xs' => '12',
         'bootstrap_grid_col_sm' => '9',
         'bootstrap_grid_col_md' => '0',
         'bootstrap_grid_col_lg' => '0',
         'required_fields' => 1,
         'classes' => 'group-col2 field-group-bootstrap_grid_col',
+        'description' => '',
       ),
     ),
   );
@@ -87,18 +93,25 @@ function ogmk_products_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'ogmk_images',
+      1 => 'ogmk_image',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(
       'label' => 'Column 3',
       'instance_settings' => array(
-        'panelize' => '0',
+        'panelize' => '1',
+        'show_heading' => '0',
+        'heading_position' => '0',
+        'label_element' => 'h3',
+        'description_element' => 'p',
+        'panel_style' => 'default',
         'bootstrap_grid_col_xs' => '12',
         'bootstrap_grid_col_sm' => '9',
         'bootstrap_grid_col_md' => '0',
         'bootstrap_grid_col_lg' => '0',
         'required_fields' => 1,
         'classes' => 'group-col3 field-group-bootstrap_grid_col',
+        'description' => '',
       ),
     ),
   );
