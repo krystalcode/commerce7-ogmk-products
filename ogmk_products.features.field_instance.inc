@@ -341,8 +341,8 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ogmk_product-body'.
-  $field_instances['node-ogmk_product-body'] = array(
+  // Exported field_instance: 'node-ogmk_product-ogmk_text_with_summary'.
+  $field_instances['node-ogmk_product-ogmk_text_with_summary'] = array(
     'bundle' => 'ogmk_product',
     'default_value' => NULL,
     'deleted' => 0,
@@ -369,7 +369,7 @@ function ogmk_products_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
+    'field_name' => 'ogmk_text_with_summary',
     'label' => 'Description',
     'required' => 0,
     'settings' => array(

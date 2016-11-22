@@ -23,7 +23,7 @@ function ogmk_products_field_group_info() {
     'label' => 'Column 1',
     'weight' => '9',
     'children' => array(
-      0 => 'body',
+      0 => 'ogmk_text_with_summary',
       1 => 'title_field',
     ),
     'format_type' => 'bootstrap_grid_col',
