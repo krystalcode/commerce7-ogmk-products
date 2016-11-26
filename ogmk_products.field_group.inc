@@ -23,8 +23,9 @@ function ogmk_products_field_group_info() {
     'label' => 'Column 1',
     'weight' => '9',
     'children' => array(
-      0 => 'ogmk_text_with_summary',
-      1 => 'title_field',
+      0 => 'title_field',
+      1 => 'ogmk_text_with_summary',
+      2 => 'ogmk_text_long',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(

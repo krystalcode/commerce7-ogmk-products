@@ -822,6 +822,87 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ogmk_product-ogmk_text_long'.
+  $field_instances['node-ogmk_product-ogmk_text_long'] = array(
+    'bundle' => 'ogmk_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_text_long',
+    'label' => 'Care',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'bonsai_html' => 0,
+          'mailgun_plain' => 0,
+          'ogmk_basic_html' => 0,
+          'ogmk_html' => 0,
+          'ogmk_plain_html' => 'ogmk_plain_html',
+          'plain_text' => 0,
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'bonsai_html' => array(
+              'weight' => 0,
+            ),
+            'mailgun_plain' => array(
+              'weight' => 0,
+            ),
+            'ogmk_basic_html' => array(
+              'weight' => 0,
+            ),
+            'ogmk_html' => array(
+              'weight' => 0,
+            ),
+            'ogmk_plain_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-ogmk_product-title_field'.
   $field_instances['node-ogmk_product-title_field'] = array(
     'bundle' => 'ogmk_product',
@@ -879,6 +960,7 @@ function ogmk_products_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Archived');
+  t('Care');
   t('Category');
   t('Costs');
   t('Description');

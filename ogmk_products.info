@@ -69,6 +69,7 @@ features[field_instance][] = node-ogmk_product-ogmk_images
 features[field_instance][] = node-ogmk_product-ogmk_labels_ref
 features[field_instance][] = node-ogmk_product-ogmk_products_ref
 features[field_instance][] = node-ogmk_product-ogmk_shop_ref
+features[field_instance][] = node-ogmk_product-ogmk_text_long
 features[field_instance][] = node-ogmk_product-title_field
 features[metatag][] = node:ogmk_product
 features[node][] = ogmk_product
