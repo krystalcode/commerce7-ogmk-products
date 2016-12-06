@@ -23,11 +23,17 @@ function ogmk_products_metatag_export_default() {
       'itemtype' => array(
         'value' => 'Product',
       ),
+      'itemprop:description' => array(
+        'value' => '[node:ogmk-text-with-summary:summary]',
+      ),
       'itemprop:image' => array(
         'value' => '[node:ogmk_images:1110]',
       ),
       'og:type' => array(
         'value' => 'product',
+      ),
+      'og:description' => array(
+        'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'og:image' => array(
         'value' => '[node:ogmk_images:1110]',
@@ -55,6 +61,9 @@ function ogmk_products_metatag_export_default() {
       ),
       'twitter:card' => array(
         'value' => 'product',
+      ),
+      'twitter:description' => array(
+        'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'twitter:image' => array(
         'value' => '[node:ogmk_images:1110]',
