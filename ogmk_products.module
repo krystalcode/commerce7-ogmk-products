@@ -54,6 +54,9 @@ function ogmk_products_commerce_line_item_type_info() {
     'product' => TRUE,
     'add_form_submit_value' => t('Add product'),
     'base' => 'commerce_product_line_item',
+    'callbacks' => array(
+      'title' => '_ogmk_products_line_item_title__ogmk_product',
+    ),
   );
 
   return $line_item_types;
@@ -71,6 +74,34 @@ function ogmk_products_node_insert($node) {
  */
 function ogmk_products_node_update($node) {
   _ogmk_products_generate_skus($node);
+}
+
+/**
+ * Callbacks.
+ */
+
+/**
+ * Line item title callback.
+ *
+ * @Issue(
+ *   "Take into account internationalisation as well"
+ *   type="bug"
+ *   priority="low"
+ *   labels="internationalisation"
+ * )
+ */
+function _ogmk_products_line_item_title__ogmk_product($line_item) {
+  $product_id = (int) $line_item->commerce_product[LANGUAGE_NONE][0]['product_id'];
+  $node = ogmk_products_product_get_node($product_id);
+
+  $title = check_plain($node->title);
+
+  if (count($node->ogmk_products_ref[LANGUAGE_NONE]) > 1) {
+    $product = commerce_product_load($product_id);
+    $title .= ', ' . check_plain($product->title);
+  }
+
+  return $title;
 }
 
 /**
