@@ -84,10 +84,9 @@ function ogmk_products_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'og_ui',
         'settings' => array(),
-        'type' => 'og_list_default',
-        'weight' => -4,
+        'type' => 'hidden',
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'commerce_order',
