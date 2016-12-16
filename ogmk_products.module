@@ -63,6 +63,57 @@ function ogmk_products_commerce_line_item_type_info() {
 }
 
 /**
+ * Implements hook_commerce_cart_product_add().
+ */
+function ogmk_products_commerce_cart_product_add($order, $product, $quantity, $line_item) {
+  // Set a status message that the product was successfully added to the cart.
+  $title = commerce_line_item_title($line_item);
+  drupal_set_message(
+    t(
+      'The "%title" product has been added to <a href="!cart-url">your cart</a>.',
+      array(
+        '%title'    => $title,
+        '!cart-url' => url('cart')
+      )
+    )
+  );
+}
+
+/**
+ * Implements hook_commerce_cart_product_remove().
+ */
+function ogmk_products_commerce_cart_product_remove($order, $product, $quantity, $line_item) {
+  // Set a status message that the product was successfully removed from the
+  // cart.
+  $title = commerce_line_item_title($line_item);
+  drupal_set_message(
+    t(
+      'The "%title" product has been removed from <a href="!cart-url">your cart</a>.',
+      array(
+        '%title'    => $title,
+        '!cart-url' => url('cart')
+      )
+    )
+  );
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ogmk_products_form_views_form_commerce_cart_form_default_alter(&$form, &$form_state, $form_id) {
+  // Alter the form submit callbacks so that we override the message displayed
+  // when a product is removed from the cart.
+  if (!empty($form['edit_delete'])) {
+    foreach(element_children($form['edit_delete']) as $key) {
+      $form['edit_delete'][$key]['#submit'] = array(
+        'views_form_views_form_submit',
+        '_ogmk_products_line_item_delete_form_submit',
+      );
+    }
+  }
+}
+
+/**
  * Implements hook_node_insert().
  */
 function ogmk_products_node_insert($node) {
@@ -102,6 +153,27 @@ function _ogmk_products_line_item_title__ogmk_product($line_item) {
   }
 
   return $title;
+}
+
+/**
+ * Form submit callback to show the line item delete message.
+ */
+function _ogmk_products_line_item_delete_form_submit($form, &$form_state) {
+  $line_item_id = $form_state['triggering_element']['#line_item_id'];
+
+  // Get the corresponding wrapper to show the correct title.
+  $line_item_wrapper = entity_metadata_wrapper('commerce_line_item', $form_state['line_items'][$line_item_id]);
+
+  // If the deleted line item is a product we do not display a message. We will
+  // be displaying it via hook_commerce_cart_product_remove() because the line
+  // item here seems to have already been deleted and we cannot get the proper
+  // line item title.
+  if (in_array($line_item_wrapper->getBundle(), commerce_product_line_item_types())) {
+    return;
+  }
+
+  $title = $line_item_wrapper->line_item_label->value();
+  drupal_set_message(t('%title removed from your cart.', array('%title' => $title)));
 }
 
 /**
