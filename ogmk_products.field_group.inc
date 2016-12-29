@@ -95,6 +95,11 @@ function ogmk_products_field_group_info() {
     'children' => array(
       0 => 'ogmk_images',
       1 => 'ogmk_image',
+      2 => 'ogmk_smi_facebook',
+      3 => 'ogmk_smi_google_plus',
+      4 => 'ogmk_smi_instagram',
+      5 => 'ogmk_smi_pinterest',
+      6 => 'ogmk_smi_twitter',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(

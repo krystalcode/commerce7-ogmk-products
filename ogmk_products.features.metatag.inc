@@ -18,7 +18,7 @@ function ogmk_products_metatag_export_default() {
         'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'image_src' => array(
-        'value' => '[node:ogmk_images:1110]',
+        'value' => '[node:ogmk_image]',
       ),
       'itemtype' => array(
         'value' => 'Product',
@@ -27,7 +27,7 @@ function ogmk_products_metatag_export_default() {
         'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'itemprop:image' => array(
-        'value' => '[node:ogmk_images:1110]',
+        'value' => '[node:ogmk_smi_google_plus]',
       ),
       'og:type' => array(
         'value' => 'product',
@@ -36,7 +36,7 @@ function ogmk_products_metatag_export_default() {
         'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'og:image' => array(
-        'value' => '[node:ogmk_images:1110]',
+        'value' => '[node:ogmk_smi_facebook]',
       ),
       'product:price:amount' => array(
         'value' => '[node:ogmk-products-ref:0:commerce-price:amount_decimal]',
@@ -60,13 +60,13 @@ function ogmk_products_metatag_export_default() {
         'value' => 'New',
       ),
       'twitter:card' => array(
-        'value' => 'product',
+        'value' => 'summary_large_image',
       ),
       'twitter:description' => array(
         'value' => '[node:ogmk-text-with-summary:summary]',
       ),
       'twitter:image' => array(
-        'value' => '[node:ogmk_images:1110]',
+        'value' => '[node:ogmk_smi_twitter]',
       ),
     ),
   );

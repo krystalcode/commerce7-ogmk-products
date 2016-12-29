@@ -355,7 +355,7 @@ function ogmk_products_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 22,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'above',
@@ -431,7 +431,7 @@ function ogmk_products_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 42,
     ),
   );
 
@@ -529,7 +529,7 @@ function ogmk_products_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'ogmk_images',
-    'label' => 'Images',
+    'label' => 'Gallery Images',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -551,7 +551,7 @@ function ogmk_products_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -567,7 +567,7 @@ function ogmk_products_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
@@ -598,7 +598,7 @@ function ogmk_products_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 5,
+      'weight' => 43,
     ),
   );
 
@@ -742,6 +742,271 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ogmk_product-ogmk_smi_facebook'.
+  $field_instances['node-ogmk_product-ogmk_smi_facebook'] = array(
+    'bundle' => 'ogmk_product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_smi_facebook',
+    'label' => 'Facebook Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'node/ogmk_product/ogmk_smi_facebook',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-ogmk_product-ogmk_smi_google_plus'.
+  $field_instances['node-ogmk_product-ogmk_smi_google_plus'] = array(
+    'bundle' => 'ogmk_product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_smi_google_plus',
+    'label' => 'Google Plus Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'node/ogmk_product/ogmk_smi_google_plus',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-ogmk_product-ogmk_smi_instagram'.
+  $field_instances['node-ogmk_product-ogmk_smi_instagram'] = array(
+    'bundle' => 'ogmk_product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_smi_instagram',
+    'label' => 'Instagram Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'node/ogmk_product/ogmk_smi_instagram',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-ogmk_product-ogmk_smi_pinterest'.
+  $field_instances['node-ogmk_product-ogmk_smi_pinterest'] = array(
+    'bundle' => 'ogmk_product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_smi_pinterest',
+    'label' => 'Pinterest Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'node/ogmk_product/ogmk_smi_pinterest',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-ogmk_product-ogmk_smi_twitter'.
+  $field_instances['node-ogmk_product-ogmk_smi_twitter'] = array(
+    'bundle' => 'ogmk_product',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_smi_twitter',
+    'label' => 'Twitter Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'node/ogmk_product/ogmk_smi_twitter',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-ogmk_product-ogmk_text_long'.
   $field_instances['node-ogmk_product-ogmk_text_long'] = array(
     'bundle' => 'ogmk_product',
@@ -754,7 +1019,7 @@ function ogmk_products_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 11,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'above',
@@ -913,7 +1178,7 @@ function ogmk_products_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 21,
       ),
       'ogmk_bootstrap_media' => array(
         'label' => 'hidden',
@@ -963,12 +1228,17 @@ function ogmk_products_field_default_field_instances() {
   t('Category');
   t('Costs');
   t('Description');
-  t('Images');
+  t('Facebook Image');
+  t('Gallery Images');
+  t('Google Plus Image');
+  t('Instagram Image');
   t('Labels');
+  t('Pinterest Image');
   t('Shop');
   t('Shops');
   t('Teaser Image');
   t('Title');
+  t('Twitter Image');
   t('Variants');
   t('Weight');
 
