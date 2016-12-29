@@ -130,55 +130,6 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'commerce_product-ogmk_product-ogmk_costs'.
-  $field_instances['commerce_product-ogmk_product-ogmk_costs'] = array(
-    'bundle' => 'ogmk_product',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'line_item' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'node_ogmk_bootstrap_media' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'node_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'commerce_product',
-    'field_name' => 'ogmk_costs',
-    'label' => 'Costs',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'commerce_product-ogmk_product-ogmk_shop_ref'.
   $field_instances['commerce_product-ogmk_product-ogmk_shop_ref'] = array(
     'bundle' => 'ogmk_product',
@@ -1226,7 +1177,6 @@ function ogmk_products_field_default_field_instances() {
   t('Archived');
   t('Care');
   t('Category');
-  t('Costs');
   t('Description');
   t('Facebook Image');
   t('Gallery Images');
