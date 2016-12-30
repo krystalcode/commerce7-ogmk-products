@@ -114,6 +114,27 @@ function ogmk_products_form_views_form_commerce_cart_form_default_alter(&$form, 
 }
 
 /**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function ogmk_products_inline_entity_form_table_fields_alter(&$fields, $context) {
+  if (
+    $context['parent_entity_type'] !== 'node' ||
+    $context['parent_bundle'] !== 'ogmk_product' ||
+    $context['field_name'] !== 'ogmk_products_ref'
+  ) {
+    return;
+  }
+
+  // Add the 'ogmk_weight' field on the table.
+  $fields['commerce_price']['weight'] = 3;
+  $fields['ogmk_weight'] = array(
+    'type' => 'field',
+    'label' => t('Weight'),
+    'weight' => 4,
+  );
+}
+
+/**
  * Implements hook_node_insert().
  */
 function ogmk_products_node_insert($node) {
