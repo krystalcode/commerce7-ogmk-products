@@ -44,17 +44,8 @@ function ogmk_products_metatag_export_default() {
       'product:price:currency' => array(
         'value' => 'USD',
       ),
-      'product:retailer_title' => array(
-        'value' => 'The Golden Silver Hands',
-      ),
       'product:category' => array(
         'value' => '[node:ogmk_category_ref]',
-      ),
-      'product:weight:value' => array(
-        'value' => '[node:ogmk-products-ref:0:ogmk-weight:weight]',
-      ),
-      'product:weight:units' => array(
-        'value' => '[node:ogmk-products-ref:0:ogmk-weight:unit]',
       ),
       'product:condition' => array(
         'value' => 'New',
