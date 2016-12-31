@@ -211,7 +211,7 @@ function _ogmk_products_line_item_delete_form_submit($form, &$form_state) {
  *   Zero (0) if there is no node referencing the product.
  *   The node's id otherwise.
  */
-function ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
+function ogmk_products_product_has_node($product, $node_type = 'ogmk_product', $access_bypass = FALSE) {
   $productId = NULL;
   if (is_int($product)) {
     $productId = $product;
@@ -226,6 +226,11 @@ function ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
     ->entityCondition('entity_type', 'node', '=')
     ->propertyCondition('type', $node_type)
     ->fieldCondition('ogmk_products_ref', 'product_id', $productId, '=');
+
+  if ($access_bypass) {
+    $query->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+  }
+
   $result = $query->execute();
 
   if (empty($result['node'])) {
@@ -247,8 +252,8 @@ function ogmk_products_product_has_node($product, $node_type = 'ogmk_product') {
  *   NULL if there is no node referencing the product.
  *   The node's object otherwise.
  */
-function ogmk_products_product_get_node($product, $node_type = 'ogmk_product') {
-  $nodeId = ogmk_products_product_has_node($product, $node_type);
+function ogmk_products_product_get_node($product, $node_type = 'ogmk_product', $access_bypass = FALSE) {
+  $nodeId = ogmk_products_product_has_node($product, $node_type, $access_bypass);
 
   if ($nodeId) {
     return node_load($nodeId);
