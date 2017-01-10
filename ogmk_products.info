@@ -83,7 +83,6 @@ features[field_instance][] = node-ogmk_product-ogmk_smi_twitter
 features[field_instance][] = node-ogmk_product-ogmk_text_long
 features[field_instance][] = node-ogmk_product-ogmk_text_with_summary
 features[field_instance][] = node-ogmk_product-title_field
-features[metatag][] = node:ogmk_product
 features[node][] = ogmk_product
 features[user_permission][] = administer commerce_order entities
 features[user_permission][] = administer commerce_product entities
