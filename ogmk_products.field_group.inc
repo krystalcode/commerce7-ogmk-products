@@ -158,6 +158,43 @@ function ogmk_products_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_col5|node|ogmk_product|form';
+  $field_group->group_name = 'group_col5';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'ogmk_product';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_row5';
+  $field_group->data = array(
+    'label' => 'Column 5',
+    'weight' => '11',
+    'children' => array(
+      0 => 'ogmk_paragraphs',
+    ),
+    'format_type' => 'bootstrap_grid_col',
+    'format_settings' => array(
+      'label' => 'Column 5',
+      'instance_settings' => array(
+        'panelize' => '1',
+        'show_heading' => '0',
+        'heading_position' => '0',
+        'label_element' => 'h3',
+        'description_element' => 'p',
+        'panel_style' => 'default',
+        'bootstrap_grid_col_xs' => '12',
+        'bootstrap_grid_col_sm' => '9',
+        'bootstrap_grid_col_md' => '0',
+        'bootstrap_grid_col_lg' => '0',
+        'required_fields' => 1,
+        'classes' => 'group-col5 field-group-bootstrap_grid_col',
+        'description' => '',
+      ),
+    ),
+  );
+  $field_groups['group_col5|node|ogmk_product|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_row1|node|ogmk_product|form';
   $field_group->group_name = 'group_row1';
   $field_group->entity_type = 'node';
@@ -299,6 +336,43 @@ function ogmk_products_field_group_info() {
   );
   $field_groups['group_row4|node|ogmk_product|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_row5|node|ogmk_product|form';
+  $field_group->group_name = 'group_row5';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'ogmk_product';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Paragraphs',
+    'weight' => '4',
+    'children' => array(
+      0 => 'group_col5',
+    ),
+    'format_type' => 'bootstrap_grid_row',
+    'format_settings' => array(
+      'label' => 'Paragraphs',
+      'instance_settings' => array(
+        'show_heading' => '1',
+        'heading_position' => '0',
+        'label_element' => 'h3',
+        'description_element' => 'p',
+        'panelize' => '0',
+        'panel_style' => 'default',
+        'bootstrap_grid_col_xs' => '12',
+        'bootstrap_grid_col_sm' => '3',
+        'bootstrap_grid_col_md' => '0',
+        'bootstrap_grid_col_lg' => '0',
+        'required_fields' => 1,
+        'classes' => 'group-row5 field-group-bootstrap_grid_row',
+        'description' => 'You may optionally add any additional content paragraphs such as content lists, block references, or additional text.',
+      ),
+    ),
+  );
+  $field_groups['group_row5|node|ogmk_product|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Categories & Labels');
@@ -306,8 +380,10 @@ function ogmk_products_field_group_info() {
   t('Column 2');
   t('Column 3');
   t('Column 4');
+  t('Column 5');
   t('Details');
   t('Images');
+  t('Paragraphs');
   t('Variants');
 
   return $field_groups;

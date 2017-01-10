@@ -336,7 +336,7 @@ function ogmk_products_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -553,6 +553,66 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ogmk_product-ogmk_paragraphs'.
+  $field_instances['node-ogmk_product-ogmk_paragraphs'] = array(
+    'bundle' => 'ogmk_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 23,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_paragraphs',
+    'label' => 'Paragraphs',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'basic' => -1,
+        'block' => -1,
+        'node_list' => -1,
+      ),
+      'bundle_weights' => array(
+        'basic' => -6,
+        'block' => -5,
+        'node_list' => -4,
+      ),
+      'default_edit_mode' => 'closed',
+      'entity_translation_sync' => FALSE,
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-ogmk_product-ogmk_products_ref'.
   $field_instances['node-ogmk_product-ogmk_products_ref'] = array(
     'bundle' => 'ogmk_product',
@@ -689,7 +749,7 @@ function ogmk_products_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1183,6 +1243,7 @@ function ogmk_products_field_default_field_instances() {
   t('Google Plus Image');
   t('Instagram Image');
   t('Labels');
+  t('Paragraphs');
   t('Pinterest Image');
   t('Shop');
   t('Shops');
