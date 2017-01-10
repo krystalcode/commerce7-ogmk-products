@@ -32,6 +32,7 @@ dependencies[] = og
 dependencies[] = og_ui
 dependencies[] = ogmk_base
 dependencies[] = options
+dependencies[] = paragraphs
 dependencies[] = physical
 dependencies[] = strongarm
 dependencies[] = taxonomy
