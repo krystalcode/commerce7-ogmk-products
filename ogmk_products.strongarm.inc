@@ -300,10 +300,13 @@ function ogmk_products_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '40',
+          'weight' => '10',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(
