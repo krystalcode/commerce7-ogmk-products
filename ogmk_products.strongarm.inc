@@ -276,7 +276,7 @@ function ogmk_products_strongarm() {
         'custom_settings' => FALSE,
       ),
       'rss' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
@@ -323,6 +323,10 @@ function ogmk_products_strongarm() {
             'weight' => '11',
             'visible' => FALSE,
           ),
+          'rss' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
         ),
         'ogmk_product:title' => array(
           'teaser' => array(
@@ -335,6 +339,10 @@ function ogmk_products_strongarm() {
           ),
           'ogmk_bootstrap_media' => array(
             'weight' => '12',
+            'visible' => FALSE,
+          ),
+          'rss' => array(
+            'weight' => '9',
             'visible' => FALSE,
           ),
         ),
@@ -351,6 +359,10 @@ function ogmk_products_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'rss' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'ogmk_product:commerce_price' => array(
           'teaser' => array(
@@ -365,6 +377,10 @@ function ogmk_products_strongarm() {
             'weight' => '7',
             'visible' => FALSE,
           ),
+          'rss' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
         ),
         'ogmk_product:ogmk_shop_ref' => array(
           'teaser' => array(
@@ -377,6 +393,10 @@ function ogmk_products_strongarm() {
           ),
           'ogmk_bootstrap_media' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'rss' => array(
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),
@@ -393,6 +413,10 @@ function ogmk_products_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'rss' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
         ),
         'ogmk_product:title_field' => array(
           'default' => array(
@@ -402,6 +426,10 @@ function ogmk_products_strongarm() {
           'ogmk_bootstrap_media' => array(
             'weight' => '6',
             'visible' => FALSE,
+          ),
+          'rss' => array(
+            'weight' => '-5',
+            'visible' => TRUE,
           ),
         ),
       ),
