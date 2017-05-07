@@ -294,6 +294,66 @@ function ogmk_products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ogmk_product-ogmk_atoms_ref'.
+  $field_instances['node-ogmk_product-ogmk_atoms_ref'] = array(
+    'bundle' => 'ogmk_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+          'override' => 0,
+        ),
+        'type' => 'ogmk_scald_basic_info',
+        'weight' => 24,
+      ),
+      'ogmk_bootstrap_media' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'ogmk_atoms_ref',
+    'label' => 'Resources',
+    'required' => 0,
+    'settings' => array(
+      'allow_override' => 0,
+      'entity_translation_sync' => FALSE,
+      'referencable_types' => array(
+        'image' => 0,
+        'video' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'atom_reference',
+      'settings' => array(
+        'context' => 'sdl_editor_representation',
+      ),
+      'type' => 'atom_reference_textfield',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-ogmk_product-ogmk_boolean'.
   $field_instances['node-ogmk_product-ogmk_boolean'] = array(
     'bundle' => 'ogmk_product',
@@ -397,7 +457,7 @@ function ogmk_products_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 42,
+      'weight' => 46,
     ),
   );
 
@@ -586,7 +646,7 @@ function ogmk_products_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 43,
+      'weight' => 47,
     ),
   );
 
@@ -1356,6 +1416,7 @@ function ogmk_products_field_default_field_instances() {
   t('Labels');
   t('Paragraphs');
   t('Pinterest Image');
+  t('Resources');
   t('Shop');
   t('Shops');
   t('Teaser Image');

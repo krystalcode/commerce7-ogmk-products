@@ -10,6 +10,7 @@ dependencies[] = ogmk_shops
 dependencies[] = ogmk_taxonomy
 
 ; Other dependencies.
+dependencies[] = atom_reference
 dependencies[] = commerce_cart
 dependencies[] = commerce_features
 dependencies[] = commerce_order
@@ -68,6 +69,7 @@ features[field_instance][] = commerce_order-commerce_order-ogmk_shops_ref
 features[field_instance][] = commerce_product-ogmk_product-ogmk_shop_ref
 features[field_instance][] = commerce_product-ogmk_product-ogmk_weight
 features[field_instance][] = commerce_product-ogmk_product-title_field
+features[field_instance][] = node-ogmk_product-ogmk_atoms_ref
 features[field_instance][] = node-ogmk_product-ogmk_boolean
 features[field_instance][] = node-ogmk_product-ogmk_category_ref
 features[field_instance][] = node-ogmk_product-ogmk_image

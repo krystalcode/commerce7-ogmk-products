@@ -100,6 +100,7 @@ function ogmk_products_field_group_info() {
       4 => 'ogmk_smi_instagram',
       5 => 'ogmk_smi_pinterest',
       6 => 'ogmk_smi_twitter',
+      7 => 'ogmk_atoms_ref',
     ),
     'format_type' => 'bootstrap_grid_col',
     'format_settings' => array(
@@ -166,7 +167,7 @@ function ogmk_products_field_group_info() {
   $field_group->parent_name = 'group_row5';
   $field_group->data = array(
     'label' => 'Column 5',
-    'weight' => '11',
+    'weight' => '46',
     'children' => array(
       0 => 'ogmk_paragraphs',
     ),
@@ -274,27 +275,28 @@ function ogmk_products_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Images',
+    'label' => 'Resources',
     'weight' => '2',
     'children' => array(
       0 => 'group_col3',
     ),
     'format_type' => 'bootstrap_grid_row',
     'format_settings' => array(
-      'label' => 'Images',
+      'label' => 'Resources',
       'instance_settings' => array(
         'show_heading' => '1',
         'heading_position' => '0',
         'label_element' => 'h3',
         'description_element' => 'p',
         'panelize' => '0',
+        'panel_style' => 'default',
         'bootstrap_grid_col_xs' => '12',
         'bootstrap_grid_col_sm' => '3',
         'bootstrap_grid_col_md' => '0',
         'bootstrap_grid_col_lg' => '0',
         'required_fields' => 1,
         'classes' => 'group-row3 field-group-bootstrap_grid_row',
-        'description' => 'Add images of the product as they will be shown to visitors. You can add as many images as you like, although 3-6 images is a good number.',
+        'description' => 'Add images of the product as they will be shown to visitors. You can add as many images as you like, although 3-6 images is a good number. You may optionally add the images that will be used for the Social Media related metatags, and any related videos as well.',
       ),
     ),
   );
@@ -382,8 +384,8 @@ function ogmk_products_field_group_info() {
   t('Column 4');
   t('Column 5');
   t('Details');
-  t('Images');
   t('Paragraphs');
+  t('Resources');
   t('Variants');
 
   return $field_groups;
